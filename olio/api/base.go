@@ -22,7 +22,7 @@ func (api *OlioBaseCoreAPI) RunMigrations(migrations []db.Migration, tableName .
 		log.Fatalf("Wrong number of args (%d), function takes 1 or 2 args", 1+len(tableName))
 	}
 
-	var migrationManager db.MigrationManager
+	var migrationManager *db.MigrationManager
 	if len(tableName) == 1 {
 		migrationManager = db.NewMigrationManager(api.ConnectionManager, migrations, tableName[0])
 	} else {
