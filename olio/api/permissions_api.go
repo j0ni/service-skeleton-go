@@ -2,9 +2,10 @@ package api
 
 import (
 	"time"
-	"github.com/olioapps/service-skeleton-go/olio/common/models"
-	"github.com/olioapps/service-skeleton-go/olio/dao"
-	"github.com/olioapps/service-skeleton-go/olio/common/filter"
+
+	"github.com/j0ni/service-skeleton-go/olio/common/filter"
+	"github.com/j0ni/service-skeleton-go/olio/common/models"
+	"github.com/j0ni/service-skeleton-go/olio/dao"
 )
 
 const PERMISSION_TYPE_INCLUDES string = "+"
@@ -21,7 +22,7 @@ const PERMISSION_OBJECT_TYPE_PASSWORD string = "PASSWORD"
 const PERMISSION_OBJECT_TYPE_USER string = "USER"
 
 type PermissionsAPI struct {
-	dao	*dao.PermissionsDAO
+	dao *dao.PermissionsDAO
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////

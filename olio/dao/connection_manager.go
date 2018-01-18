@@ -8,8 +8,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 
+	"github.com/j0ni/service-skeleton-go/olio/extractors"
 	"github.com/jinzhu/gorm"
-	"github.com/olioapps/service-skeleton-go/olio/extractors"
 	log "github.com/sirupsen/logrus"
 )
 

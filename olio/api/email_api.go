@@ -8,7 +8,7 @@ package api
 // 	log "github.com/sirupsen/logrus"
 // 	"github.com/hectane/go-nonblockingchan"
 // 	"github.com/sendgrid/sendgrid-go"
-// 	"github.com/olioapps/service-skeleton-go/olio/util"
+// 	"github.com/j0ni/service-skeleton-go/olio/util"
 // )
 
 // type EmailAPI struct {

@@ -1,9 +1,9 @@
 package resources
 
 import (
-	log "github.com/sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	"github.com/olioapps/service-skeleton-go/olio/service/middleware"
+	"github.com/j0ni/service-skeleton-go/olio/service/middleware"
+	log "github.com/sirupsen/logrus"
 )
 
 type PingResource struct {

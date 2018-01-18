@@ -2,8 +2,8 @@ package resources
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/olioapps/service-skeleton-go/olio/extractors"
-	"github.com/olioapps/service-skeleton-go/olio/models"
+	"github.com/j0ni/service-skeleton-go/olio/extractors"
+	"github.com/j0ni/service-skeleton-go/olio/models"
 	log "github.com/sirupsen/logrus"
 )
 

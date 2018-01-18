@@ -3,7 +3,7 @@ package dao
 import (
 	"errors"
 
-	"github.com/olioapps/service-skeleton-go/olio/util"
+	"github.com/j0ni/service-skeleton-go/olio/util"
 )
 
 type StringBaseDAO struct {

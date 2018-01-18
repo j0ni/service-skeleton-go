@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/olioapps/service-skeleton-go/olio/dao"
-	"github.com/olioapps/service-skeleton-go/olio/util"
+	"github.com/j0ni/service-skeleton-go/olio/dao"
+	"github.com/j0ni/service-skeleton-go/olio/util"
 	log "github.com/sirupsen/logrus"
 )
 

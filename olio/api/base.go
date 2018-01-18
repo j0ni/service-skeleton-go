@@ -5,8 +5,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/olioapps/service-skeleton-go/olio/dao"
-	"github.com/olioapps/service-skeleton-go/olio/db"
+	"github.com/j0ni/service-skeleton-go/olio/dao"
+	"github.com/j0ni/service-skeleton-go/olio/db"
 )
 
 type OlioBaseCoreAPI struct {

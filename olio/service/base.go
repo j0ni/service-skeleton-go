@@ -3,10 +3,10 @@ package service
 import (
 	"github.com/gin-gonic/gin"
 	network "github.com/glibs/gin-webserver"
-	"github.com/olioapps/service-skeleton-go/olio/extractors"
-	olioMiddleware "github.com/olioapps/service-skeleton-go/olio/service/middleware"
-	olioResources "github.com/olioapps/service-skeleton-go/olio/service/resources"
-	"github.com/olioapps/service-skeleton-go/olio/util"
+	"github.com/j0ni/service-skeleton-go/olio/extractors"
+	olioMiddleware "github.com/j0ni/service-skeleton-go/olio/service/middleware"
+	olioResources "github.com/j0ni/service-skeleton-go/olio/service/resources"
+	"github.com/j0ni/service-skeleton-go/olio/util"
 	log "github.com/sirupsen/logrus"
 )
 

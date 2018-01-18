@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"github.com/olioapps/service-skeleton-go/olio/common/filter"
-	"github.com/olioapps/service-skeleton-go/olio/common/models"
+	"github.com/j0ni/service-skeleton-go/olio/common/filter"
+	"github.com/j0ni/service-skeleton-go/olio/common/models"
 )
 
 type PermissionsDAO struct {
