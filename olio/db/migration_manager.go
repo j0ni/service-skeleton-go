@@ -1,6 +1,7 @@
 package db
 
 import (
+	"database/sql"
 	"errors"
 	"fmt"
 	"strconv"
@@ -32,8 +33,8 @@ func (self *MigrationManager) getCurrentVersion() (int, error) {
 
 func (self *MigrationManager) perequisites() error {
 	db := self.connectionManager.GetDb()
-	sql := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (version int)", self.tableName)
-	if db.Exec(sql).Error != nil {
+	sqlStr := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (version int)", self.tableName)
+	if db.Exec(sqlStr).Error != nil {
 		return db.Error
 	}
 
@@ -42,8 +43,8 @@ func (self *MigrationManager) perequisites() error {
 		return error
 	}
 	if rows == nil || rows.Err() == sql.ErrNoRows || !rows.Next() {
-		sql = fmt.Sprintf("INSERT INTO %s values (?)", self.tableName)
-		return db.Exec(sql, 0).Error
+		sqlStr = fmt.Sprintf("INSERT INTO %s values (?)", self.tableName)
+		return db.Exec(sqlStr, 0).Error
 	}
 	rows.Close()
 	return nil
@@ -51,8 +52,8 @@ func (self *MigrationManager) perequisites() error {
 
 func (self *MigrationManager) incrementVersion(targetVersion int) error {
 	db := self.connectionManager.GetDb()
-	sql := fmt.Sprintf("UPDATE %s SET version = ?", self.tableName)
-	return db.Exec(sql, targetVersion).Error
+	sqlStr := fmt.Sprintf("UPDATE %s SET version = ?", self.tableName)
+	return db.Exec(sqlStr, targetVersion).Error
 }
 
 func (self *MigrationManager) Migrate() error {
