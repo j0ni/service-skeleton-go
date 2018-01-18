@@ -8,7 +8,11 @@
 
 [[projects]]
   name = "github.com/gin-gonic/gin"
-  packages = [".","binding","render"]
+  packages = [
+    ".",
+    "binding",
+    "render"
+  ]
   revision = "e2212d40c62a98b388a5eb48ecbdcf88534688ba"
   version = "v1.1.4"
 
@@ -30,9 +34,19 @@
   revision = "2402d76f3d41f928c7902a765dfc872356dd3aad"
 
 [[projects]]
+  name = "github.com/google/jsonapi"
+  packages = ["."]
+  revision = "46d3ced0434461be12e555852e2f1a9ed382e139"
+  version = "1.0.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/jinzhu/gorm"
-  packages = [".","dialects/mysql","dialects/postgres"]
+  packages = [
+    ".",
+    "dialects/mysql",
+    "dialects/postgres"
+  ]
   revision = "3a9e91ab372120a0e35b518430255308e3d8d5ea"
 
 [[projects]]
@@ -42,7 +56,11 @@
 
 [[projects]]
   name = "github.com/lib/pq"
-  packages = [".","hstore","oid"]
+  packages = [
+    ".",
+    "hstore",
+    "oid"
+  ]
   revision = "3cd0097429be7d611bb644ef85b42bfb102ceea4"
 
 [[projects]]
@@ -69,11 +87,6 @@
   version = "v1.0.0"
 
 [[projects]]
-  name = "github.com/shwoodard/jsonapi"
-  packages = ["."]
-  revision = "a337a3bc9f0a02cb5d289564e5c97c65e46efc42"
-
-[[projects]]
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   revision = "4b6ea7319e214d98c938f12692336f7ca9348d6b"
@@ -86,7 +99,10 @@
 
 [[projects]]
   name = "golang.org/x/crypto"
-  packages = ["bcrypt","blowfish"]
+  packages = [
+    "bcrypt",
+    "blowfish"
+  ]
   revision = "3fbbcd23f1cb824e69491a5930cfeff09b12f4d2"
 
 [[projects]]
@@ -115,7 +131,10 @@
 [[projects]]
   branch = "v2"
   name = "gopkg.in/mgo.v2"
-  packages = ["bson","internal/json"]
+  packages = [
+    "bson",
+    "internal/json"
+  ]
   revision = "3f83fa5005286a7fe593b055f0d7771a7dce4655"
 
 [[projects]]
@@ -127,6 +146,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8ba948469169884a23a428953de148598e5e001e7deb7f188bd5e6c52847f766"
+  inputs-digest = "3b41d591e8de7998037ac0efe14c94a47a6c96aeb111f54fcf2fd1d40d64de44"
   solver-name = "gps-cdcl"
   solver-version = 1

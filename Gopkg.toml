@@ -11,7 +11,7 @@
   name = "github.com/pborman/uuid"
 
 [[constraint]]
-  name = "github.com/shwoodard/jsonapi"
+  name = "github.com/google/jsonapi"
 
 [[constraint]]
   name = "github.com/sirupsen/logrus"
