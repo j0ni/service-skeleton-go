@@ -100,7 +100,7 @@ func (self *MigrationManager) Migrate() error {
 
 func NewMigrationManager(connectionManager *dao.ConnectionManager, migrations []Migration, tableName ...string) *MigrationManager {
 	if len(tableName) > 1 {
-		log.Fatalf("Wrong number of args (%d), function takes 2 or 3 args", len(tableName))
+		log.Fatalf("Wrong number of args (%d), function takes 2 or 3 args", 2+len(tableName))
 	}
 
 	migrationManager := MigrationManager{}
