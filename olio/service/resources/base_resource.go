@@ -38,7 +38,7 @@ func (self *BaseResource) ReturnJSONAPI(c *gin.Context, status int, record inter
 	w.Header().Set("Content-Type", "application/json")
 
 	if record != nil {
-		if err := jsonapi.MarshalOnePayload(w, record); err != nil {
+		if err := jsonapi.MarshalPayload(w, record); err != nil {
 			self.ReturnJSONException(c, api.NewRuntimeException(err.Error()))
 		}
 	}
@@ -55,7 +55,7 @@ func (self *BaseResource) ReturnJSONAPIArray(c *gin.Context, status int, records
 			Data: []*jsonapi.Node{},
 		})
 	} else {
-		if err := jsonapi.MarshalManyPayload(w, records); err != nil {
+		if err := jsonapi.MarshalPayload(w, records); err != nil {
 			self.ReturnJSONException(c, api.NewRuntimeException(err.Error()))
 		}
 	}
